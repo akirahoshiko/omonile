@@ -1,8 +1,8 @@
 name: Deploy to GitHub Pages
 
+# The live site is hosted on Cloudflare Pages, so this GitHub Pages deploy only runs when started by hand
+# (Actions tab -> Deploy to GitHub Pages -> Run workflow).
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:

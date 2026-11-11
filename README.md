@@ -1,16 +1,52 @@
-# React + Vite
+# Peace Ejiga · Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+My portfolio website. I design websites and build workflow automations that take repetitive work off small teams: enquiries, bookings, reminders and follow-ups.
 
-Currently, two official plugins are available:
+![Portfolio homepage](docs/preview.jpg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What's inside
 
-## React Compiler
+**Selected work**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Project | What it is | Built with |
+| --- | --- | --- |
+| Telegram Booking Assistant | AI assistant that answers questions, saves customers and books appointments in one chat | n8n, OpenAI, Google Sheets, Google Calendar |
+| Telegram Meal Tracker | Log meals by text, voice or photo, get progress reports with charts | n8n, Google Gemini, Google Sheets |
+| Order Reminder Automation | Finds orders that need a follow-up, emails the customer and marks the row | n8n, Google Sheets, Gmail |
+| Haven Stays | Vacation-rental website template: search, filters, nightly prices, price estimate pop-up, FAQ | HTML, CSS, JavaScript |
 
-## Expanding the Oxlint configuration
+The Haven Stays template lives in [`public/sites/rental`](public/sites/rental) and runs as a standalone page.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+**Site features**
+
+- Floating header that follows you as you scroll, with section highlighting
+- Project case studies (problem, process, solution, result)
+- Working contact form (Formspree) with validation and spam protection
+- Responsive from phone to desktop, keyboard accessible, respects reduced motion
+
+## Tech
+
+React, Vite, Tailwind CSS, React Router. Hosted on Cloudflare Pages.
+
+## Run it locally
+
+```bash
+npm install
+npm run dev      # local development
+npm run build    # production build in dist/
+```
+
+## Editing content
+
+All text lives in data files, not in the components:
+
+- `src/data/site.js`: profile, services, process, experience, education
+- `src/data/projects.js`: portfolio projects and case studies
+- `src/data/contact.js`: email, LinkedIn, WhatsApp, GitHub, form endpoint
+
+## Contact
+
+- Email: [peaceomachunyiejiga@gmail.com](mailto:peaceomachunyiejiga@gmail.com)
+- LinkedIn: [Peace Ejiga](https://www.linkedin.com/in/peace-ejiga-2055aa290/)
+
+© Peace Ejiga. Photos in the rental template are from Unsplash (see `public/sites/rental/img/CREDITS.txt`).
