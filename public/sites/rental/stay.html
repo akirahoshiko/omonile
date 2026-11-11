@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stay details | Haven Stays</title>
+<meta name="description" content="Photos, amenities, live availability and nightly prices for a Haven Stays home. Sample template website.">
+<meta name="theme-color" content="#3A2418">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="sr skip" href="#main">Skip to content</a>
+
+<div class="ub"><div class="wrap">
+ <ul><li><a data-c="phone" data-tel href="#"></a></li><li class="opt"><a data-c="email" data-mail href="#"></a></li><li class="opt" data-c="hours"></li></ul>
+ <span><b>Book direct</b>, no service fees</span>
+</div></div>
+
+<header class="hdr" id="hdr">
+ <div class="pill">
+  <a class="logo" href="index.html"><svg viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="8" fill="#5A311F"/><path d="M7 14.5l7-6 7 6M9.5 13v7h9v-7" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-c="brand">Haven Stays</span></a>
+  <nav aria-label="Main"><ul>
+   <li><a href="index.html#stays" class="on" aria-current="true">Stays</a></li><li><a href="index.html#collections">Collections</a></li><li><a href="index.html#host">Your host</a></li><li><a href="index.html#reviews">Reviews</a></li><li><a href="index.html#faq">FAQ</a></li><li><a href="index.html#contact">Contact</a></li></ul></nav>
+  <a class="btn btn-cta hd" href="#book">Check availability</a>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="mnav" aria-label="Open menu"><span></span><span></span><span></span></button>
+ </div>
+ <div class="mnav" id="mnav"><a href="index.html#stays">Stays</a><a href="index.html#collections">Collections</a><a href="index.html#host">Your host</a><a href="index.html#reviews">Reviews</a><a href="index.html#faq">FAQ</a><a href="index.html#contact">Contact</a></div>
+</header>
+
+<main id="main" class="stay-main">
+ <div class="wrap" id="stay">
+  <nav class="bc" aria-label="Breadcrumb"><ol class="crumbs" id="crumbs"></ol></nav>
+  <div class="st-head">
+   <div>
+    <h1 id="sTitle"></h1>
+    <div class="st-meta" id="sMeta"></div>
+   </div>
+   <div class="st-actions">
+    <button class="icon-btn" type="button" id="share"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12v7a1 1 0 001 1h14a1 1 0 001-1v-7M16 6l-4-4-4 4M12 2v13"/></svg><span>Share</span></button>
+    <button class="icon-btn" type="button" id="save" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-9.3-9.2C1.5 7.6 3.6 4.5 6.9 4.5c2 0 3.4 1.1 5.1 3 1.7-1.9 3.1-3 5.1-3 3.3 0 5.4 3.1 4.2 6.3C19.5 15.4 12 20 12 20z"/></svg><span>Save</span></button>
+   </div>
+  </div>
+
+  <div class="gallery" id="gallery" role="group" aria-label="Photos"></div>
+
+  <div class="st-grid">
+   <div>
+    <section class="st-sec" aria-labelledby="aboutT">
+     <ul class="kfacts" id="kfacts" aria-label="Key facts"></ul>
+     <h2 id="aboutT">About this <em>home</em></h2>
+     <div id="sAbout"></div>
+    </section>
+
+    <section class="st-sec" aria-labelledby="amT">
+     <h2 id="amT">What this place <em>offers</em></h2>
+     <ul class="amen" id="sAmen"></ul>
+    </section>
+
+    <section class="st-sec" aria-labelledby="slT">
+     <h2 id="slT">Where you'll <em>sleep</em></h2>
+     <ul class="sleep" id="sSleep"></ul>
+    </section>
+
+    <section class="st-sec" id="avail" aria-labelledby="avT">
+     <div class="cal-top">
+      <div><h2 id="avT" style="margin-bottom:6px">Availability</h2><p id="calHint">Choose your check-in date.</p></div>
+      <div class="cal-nav"><button type="button" id="calPrev" aria-label="Previous month">&lsaquo;</button><button type="button" id="calNext" aria-label="Next month">&rsaquo;</button></div>
+     </div>
+     <div class="cal-wrap" id="cal"></div>
+     <div class="legend"><span><s>12</s> Booked</span><span>Minimum stay: <b id="calMin"></b></span><button type="button" id="calClear" style="border:0;background:none;padding:0;color:var(--teal);font-weight:600;font-size:14px;text-decoration:underline;cursor:pointer">Clear dates</button></div>
+    </section>
+
+    <section class="st-sec" aria-labelledby="locT">
+     <h2 id="locT">Where you'll <em>be</em></h2>
+     <div class="map" id="sMap" role="img" aria-label="Map of the area"></div>
+     <p class="map-note">Map shows the area. The exact address is shared once your booking is confirmed.</p>
+     <ul class="near" id="sNear"></ul>
+    </section>
+
+    <section class="st-sec" aria-labelledby="ruT">
+     <h2 id="ruT">House <em>rules</em></h2>
+     <ul class="rules" id="sRules"></ul>
+    </section>
+
+    <section class="st-sec" aria-labelledby="rvT">
+     <h2 id="rvT">Guest <em>reviews</em></h2>
+     <div class="srv" id="sRv"></div>
+    </section>
+
+    <section class="st-sec" aria-labelledby="hoT">
+     <h2 id="hoT" class="sr">Your host</h2>
+     <div class="hostc" id="sHost"></div>
+    </section>
+   </div>
+
+   <aside aria-label="Book this stay">
+    <form class="book f" id="book" novalidate aria-label="Booking request">
+     <div class="bp"><span><b id="bPrice"></b> <span>/ night</span></span><span class="rt" id="bRate"></span></div>
+     <p class="min" id="bMin"></p>
+     <div class="two"><div><label for="bIn">Check-in</label><input type="date" id="bIn"></div><div><label for="bOut">Check-out</label><input type="date" id="bOut"></div></div>
+     <div><label for="bG">Guests</label><select id="bG"></select></div>
+     <div class="est" id="est" aria-live="polite"></div>
+     <p class="er" id="bErr" role="alert"></p>
+     <button class="btn btn-cta" type="button" id="bCheck">Check availability</button>
+     <div class="bk-more" id="bMore" hidden>
+      <div><label for="bN">Full name</label><input id="bN" autocomplete="name" required><span class="er" id="bNe"></span></div>
+      <div><label for="bE">Email</label><input id="bE" type="email" autocomplete="email" required><span class="er" id="bEe"></span></div>
+      <div><label for="bM">Message to your host (optional)</label><textarea id="bM" placeholder="Arrival time, special requests…"></textarea></div>
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" hidden>
+      <button class="btn btn-cta" type="submit">Send booking request</button>
+     </div>
+     <p class="note">You won't be charged yet. Your host confirms availability, then sends a secure payment link.</p>
+     <p class="note" style="margin-top:-8px">Template site: requests are delivered to the designer.</p>
+    </form>
+   </aside>
+  </div>
+
+  <section class="sec" aria-labelledby="moT" style="padding-bottom:80px">
+   <div class="head"><span class="eyebrow">Keep exploring</span><h2 id="moT">More <em>stays</em></h2></div>
+   <div class="grid" id="more"></div>
+  </section>
+ </div>
+</main>
+
+<div class="mbar" id="mbar"><div><b id="mPrice"></b> <span>/ night</span><br><span id="mDates">Add dates for a total</span></div><a class="btn btn-cta" href="#book" id="mGo">Check dates</a></div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+ <button class="lx" type="button" id="lbX" aria-label="Close photos">&times;</button>
+ <button class="lp" type="button" id="lbP" aria-label="Previous photo">&lsaquo;</button>
+ <img id="lbImg" alt="">
+ <p id="lbCap"></p>
+ <button class="ln" type="button" id="lbN" aria-label="Next photo">&rsaquo;</button>
+</div>
+
+<footer class="ft">
+ <div class="wrap">
+  <div class="fg">
+   <div><a class="logo" href="index.html"><span data-c="brand">Haven Stays</span></a><p style="margin-top:14px;max-width:34ch">Hand-checked vacation rentals and staycations, booked direct with no service fees.</p></div>
+   <div><h4>Explore</h4><ul><li><a href="index.html#stays">Stays</a></li><li><a href="index.html#collections">Collections</a></li><li><a href="index.html#host">Your host</a></li></ul></div>
+   <div><h4>Help</h4><ul><li><a href="index.html#faq">FAQ</a></li><li><a href="index.html#contact">Contact</a></li></ul></div>
+   <div><h4>Get in touch</h4><ul><li><a data-c="phone" data-tel href="#"></a></li><li><a data-c="email" data-mail href="#"></a></li><li data-c="hours"></li></ul></div>
+  </div>
+  <div class="legal"><span>Template website designed &amp; built by Peace Ejiga. Sample content.</span><span>Photos from <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> · Map tiles &copy; <a href="https://www.esri.com" target="_blank" rel="noopener">Esri</a>, <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span><a href="../../">Back to portfolio</a></div>
+ </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="common.js"></script>
+<script>
+(function(){
+var U=HSU,$=U.$,$$=U.$$,esc=U.esc,usd=U.usd;
+U.fillSite();U.header();
+var q=new URLSearchParams(location.search),p=U.bySlug(q.get("s"));
+
+if(!p){
+ $("#stay").innerHTML='<div class="missing"><span class="eyebrow">Not found</span><h1 style="font-size:48px">This stay isn\'t <em>listed</em></h1><p class="intro" style="margin:16px auto 28px">It may have been removed, or the link is incomplete.</p><a class="btn btn-cta" href="index.html#stays">See all stays</a></div>';
+ $("#mbar").remove();document.title="Stay not found | "+HS.SITE.brand;return;
+}
+
+/* ---- page text ---- */
+document.title=p.n+" · "+p.a+" | from "+usd(p.p)+" / night | "+HS.SITE.brand;
+$('meta[name=description]').setAttribute("content",p.n+" in "+p.a+": "+p.d+" From "+usd(p.p)+" / night. Sample template website.");
+$("#crumbs").innerHTML='<li><a href="index.html#stays">Stays</a></li><li>'+esc(p.c)+'</li><li aria-current="page">'+esc(p.n)+'</li>';
+$("#sTitle").textContent=p.n;
+$("#sMeta").innerHTML='<span class="rt"><i aria-hidden="true">★</i> '+p.r+' <span style="color:var(--mut);font-weight:400">('+p.rv.length+' reviews)</span></span><span>'+U.ic.pin+esc(p.a)+'</span><span>'+HS.TL[p.t]+'</span>';
+$("#kfacts").innerHTML='<li>'+U.ic.g+'Up to '+p.g+' guests</li><li>'+U.ic.b+p.b+' bedroom'+(p.b>1?"s":"")+'</li><li>'+U.ic.ba+p.ba+' bath'+(p.ba>1?"s":"")+'</li>';
+$("#sAbout").innerHTML='<p>'+esc(p.d)+'</p><p>'+esc(p.long)+'</p>';
+$("#sAbout").querySelectorAll("p").forEach(function(x,i){x.style.color=i?"var(--mut)":"var(--ink)";if(i)x.style.marginTop="14px";x.style.maxWidth="65ch"});
+$("#sAmen").innerHTML=p.am.map(function(a){return "<li>"+U.ic.ok+esc(a)+"</li>"}).join("");
+var bedIc='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18V7M3 13h18v5M21 13a3 3 0 00-3-3h-7v3M7 11.5a1.5 1.5 0 100-.01"/></svg>';
+$("#sSleep").innerHTML=p.sleep.map(function(s){var a=s.split(" · ");return "<li>"+bedIc+"<b>"+esc(a[0])+"</b><span>"+esc(a[1]||"")+"</span></li>"}).join("");
+/* area map: Leaflet + CARTO tiles, loaded only when the map scrolls into view */
+var mapEl=$("#sMap");mapEl.setAttribute("aria-label","Map of the area around "+p.a+". The exact address is shared after booking.");
+function loadMap(){if(mapEl._done)return;mapEl._done=1;
+ var css=document.createElement("link");css.rel="stylesheet";css.href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css";document.head.appendChild(css);
+ var js=document.createElement("script");js.src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js";
+ js.onload=function(){var m=L.map(mapEl,{scrollWheelZoom:false,attributionControl:true}).setView(p.geo,13);
+  // Esri World Street Map (no key needed for a demo). For a live business, use a keyed provider (e.g. Esri, MapTiler or Stadia).
+  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",{maxZoom:18,attribution:'Tiles &copy; <a href="https://www.esri.com">Esri</a> &mdash; Esri, HERE, Garmin, &copy; OpenStreetMap contributors'}).addTo(m);
+  L.circle(p.geo,{radius:1200,color:"#5A311F",weight:2,fillColor:"#5A311F",fillOpacity:.15}).addTo(m)};
+ js.onerror=function(){mapEl.innerHTML='<p style="padding:24px;color:var(--mut)">The map could not load. The home is in '+esc(p.a)+'.</p>'};
+ document.head.appendChild(js)}
+if("IntersectionObserver" in window){var mo=new IntersectionObserver(function(en){if(en[0].isIntersecting){loadMap();mo.disconnect()}},{rootMargin:"400px"});mo.observe(mapEl)}else loadMap();
+$("#sNear").innerHTML=p.near.map(function(n){return "<li><b>"+esc(n[0])+"</b><span>"+esc(n[1])+"</span></li>"}).join("");
+var clock='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',no='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg>';
+$("#sRules").innerHTML=[[clock,"Check-in from 15:00 (self check-in)"],[clock,"Check-out by 11:00"],[U.ic.ok,"Minimum stay "+p.min+" nights"],[p.pets?U.ic.ok:no,p.pets?"Pets welcome (small fee)":"No pets"],[no,"No parties or events"],[no,"No smoking indoors"]].map(function(r){return "<li>"+r[0]+r[1]+"</li>"}).join("");
+$("#sRv").innerHTML=p.rv.map(function(r){return '<article class="rv"><span class="stars" role="img" aria-label="'+r[2]+' out of 5 stars">'+U.stars(r[2])+'</span><p>"'+esc(r[3])+'"</p><footer><b>'+esc(r[0])+'</b>'+r[1]+'</footer></article>'}).join("");
+var H=HS.HOST;
+$("#sHost").innerHTML='<img src="'+U.src(H.img)+'" alt="'+esc(H.first)+', your host" loading="lazy"><div><span class="eyebrow" style="margin-bottom:4px">Your host</span><h3>Hosted by '+esc(H.first)+'</h3><p>Hosting since '+H.since+' · Replies '+H.response.toLowerCase()+' · Speaks '+esc(H.languages)+'</p><p>A local host meets you on arrival in '+esc(p.c.split(",")[0])+'. <a href="index.html#contact">Contact '+esc(H.first)+'</a></p></div>';
+$("#bPrice").textContent=usd(p.p);$("#mPrice").textContent=usd(p.p);
+$("#bRate").innerHTML='<i aria-hidden="true">★</i> '+p.r;
+$("#bMin").textContent="Minimum stay "+p.min+" nights · cleaning fee "+usd(p.cl);
+$("#calMin").textContent=p.min+" nights";
+for(var i=1;i<=p.g;i++){var o=document.createElement("option");o.value=i;o.textContent=i+" guest"+(i>1?"s":"");$("#bG").appendChild(o)}
+$("#bG").value=Math.min(Math.max(+q.get("g")||2,1),p.g);
+
+/* ---- gallery + photo viewer ---- */
+var g=$("#gallery"),ims=p.im.slice(0,5);g.classList.add("n"+ims.length);
+g.innerHTML=ims.map(function(k,i){return '<button type="button" data-i="'+i+'" aria-label="Open photo '+(i+1)+' of '+p.im.length+': '+esc(HS.AL[k])+'"><img src="'+U.src(k)+'" alt="" '+(i?'loading="lazy"':'fetchpriority="high"')+'></button>'}).join("")+'<button type="button" class="icon-btn all" data-i="0">Show all '+p.im.length+' photos</button>';
+var lb=$("#lb"),cur=0,back=null;
+function lbShow(i){cur=(i+p.im.length)%p.im.length;var k=p.im[cur];$("#lbImg").src=U.src(k);$("#lbImg").alt=HS.AL[k];$("#lbCap").textContent=(cur+1)+" / "+p.im.length+" · "+HS.AL[k]}
+function lbOpen(i,from){back=from;lbShow(i);lb.classList.add("open");lb.setAttribute("aria-hidden","false");document.body.style.overflow="hidden";$("#lbX").focus()}
+function lbClose(){lb.classList.remove("open");lb.setAttribute("aria-hidden","true");document.body.style.overflow="";if(back)back.focus()}
+g.addEventListener("click",function(e){var b=e.target.closest("button[data-i]");if(b)lbOpen(+b.dataset.i,b)});
+$("#lbX").onclick=lbClose;$("#lbP").onclick=function(){lbShow(cur-1)};$("#lbN").onclick=function(){lbShow(cur+1)};
+lb.addEventListener("mousedown",function(e){if(e.target==lb)lbClose()});
+document.addEventListener("keydown",function(e){if(!lb.classList.contains("open"))return;
+ if(e.key=="Escape")lbClose();else if(e.key=="ArrowRight")lbShow(cur+1);else if(e.key=="ArrowLeft")lbShow(cur-1);
+ else if(e.key=="Tab"){var f=[$("#lbX"),$("#lbP"),$("#lbN")],a=f.indexOf(document.activeElement);e.preventDefault();f[(a+(e.shiftKey?-1:1)+f.length)%f.length].focus()}});
+
+/* ---- save + share ---- */
+var key="hs-saved-"+p.id,sv=$("#save");
+try{if(localStorage.getItem(key))sv.setAttribute("aria-pressed","true")}catch(e){}
+sv.onclick=function(){var on=sv.getAttribute("aria-pressed")!="true";sv.setAttribute("aria-pressed",on);$("span",sv).textContent=on?"Saved":"Save";try{on?localStorage.setItem(key,1):localStorage.removeItem(key)}catch(e){}};
+if(sv.getAttribute("aria-pressed")=="true")$("span",sv).textContent="Saved";
+$("#share").onclick=function(){var s=$("span",this),url=location.href;
+ if(navigator.share){navigator.share({title:p.n,text:p.d,url:url}).catch(function(){});return}
+ (navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(function(){s.textContent="Link copied"},function(){s.textContent="Copy failed"}).then(function(){setTimeout(function(){s.textContent="Share"},2200)})};
+
+/* ---- availability calendar + booking ---- */
+var BK=U.booked(p),T=U.today(),ci="",co="",off=0;
+var MN=["January","February","March","April","May","June","July","August","September","October","November","December"];
+function fmt(s){var x=U.parse(s);return x.getDate()+" "+MN[x.getMonth()].slice(0,3)}
+function selectable(s){var x=U.parse(s);if(x<T)return false;
+ if(ci&&!co&&s>ci)return !U.clash(p,ci,s,BK); // choosing check-out: any day up to the next booked night
+ return !BK[s]}
+function month(y,m){var first=new Date(y,m,1),start=(first.getDay()+6)%7,days=new Date(y,m+1,0).getDate(),h='<div class="cal"><h3>'+MN[m]+" "+y+'</h3><table role="grid"><thead><tr>'+["Mo","Tu","We","Th","Fr","Sa","Su"].map(function(w){return '<th scope="col">'+w+"</th>"}).join("")+"</tr></thead><tbody><tr>";
+ for(var i=0;i<start;i++)h+="<td></td>";
+ for(var dd=1;dd<=days;dd++){var s=U.iso(new Date(y,m,dd)),ok=selectable(s),cls="",tdc="";
+  if(BK[s])cls+=" bk";if(s==ci||s==co)cls+=" sel";
+  if(ci&&co&&s>ci&&s<co)tdc="in-rng";if(ci&&co&&s==ci)tdc="rng-s";if(ci&&co&&s==co)tdc="rng-e";
+  h+='<td class="'+tdc+'"><button type="button" data-d="'+s+'" class="'+cls.trim()+'"'+(ok?"":" disabled")+' aria-label="'+dd+" "+MN[m]+(BK[s]?", booked":"")+(s==ci?", check-in":"")+(s==co?", check-out":"")+'">'+dd+"</button></td>";
+  if((start+dd)%7==0&&dd<days)h+="</tr><tr>"}
+ return h+"</tr></tbody></table></div>"}
+function render(){var b=new Date(T.getFullYear(),T.getMonth()+off,1),n=new Date(b.getFullYear(),b.getMonth()+1,1);
+ $("#cal").innerHTML=month(b.getFullYear(),b.getMonth())+month(n.getFullYear(),n.getMonth());
+ $("#calPrev").disabled=off<=0;$("#calNext").disabled=off>=5;
+ $("#calHint").textContent=!ci?"Choose your check-in date.":!co?"Now choose your check-out date.":fmt(ci)+" – "+fmt(co)+" · "+U.nights(ci,co)+" nights";
+ $("#bIn").value=ci;$("#bOut").value=co;est()}
+function est(){var n=U.nights(ci,co),e=$("#est"),err=problem();
+ if(!n){e.innerHTML="Select dates to see your total.";$("#mDates").textContent="Add dates for a total";return}
+ if(n<0){e.innerHTML="Check-out must be after check-in.";return}
+ e.innerHTML='<div><span>'+usd(p.p)+' x '+n+' night'+(n>1?"s":"")+'</span><span>'+usd(p.p*n)+'</span></div><div><span>Cleaning fee</span><span>'+usd(p.cl)+'</span></div><div class="t"><span>Estimated total</span><span>'+usd(p.p*n+p.cl)+'</span></div>';
+ $("#mDates").textContent=fmt(ci)+" – "+fmt(co)+" · "+usd(p.p*n+p.cl)+" total";
+ if(!err)$("#bErr").textContent=""}
+function problem(){var n=U.nights(ci,co);
+ if(!ci||!co)return "Please choose your check-in and check-out dates.";
+ if(n<0)return "Check-out must be after check-in.";
+ if(U.parse(ci)<T)return "Check-in can't be in the past.";
+ var c=U.clash(p,ci,co,BK);if(c)return "Sorry, "+fmt(c)+" is already booked. Please choose different dates.";
+ if(n<p.min)return "This home has a minimum stay of "+p.min+" nights.";
+ return ""}
+$("#cal").addEventListener("click",function(e){var b=e.target.closest("button[data-d]");if(!b||b.disabled)return;var s=b.dataset.d;
+ if(!ci||co||s<=ci){ci=s;co=""}else co=s;
+ $("#bMore").hidden=true;render();var nb=$('#cal button[data-d="'+s+'"]');if(nb)nb.focus()});
+$("#calPrev").onclick=function(){if(off>0){off--;render()}};$("#calNext").onclick=function(){if(off<5){off++;render()}};
+$("#calClear").onclick=function(){ci="";co="";$("#bMore").hidden=true;$("#bErr").textContent="";render()};
+$("#bIn").min=$("#bOut").min=U.iso(T);
+$("#bIn").onchange=function(){ci=this.value;if(co&&co<=ci)co="";$("#bMore").hidden=true;jump(ci);render()};
+$("#bOut").onchange=function(){co=this.value;$("#bMore").hidden=true;render()};
+function jump(s){if(!s)return;var x=U.parse(s);off=Math.max(0,Math.min(5,(x.getFullYear()-T.getFullYear())*12+x.getMonth()-T.getMonth()))}
+$("#bCheck").onclick=function(){var m=problem();$("#bErr").textContent=m;
+ if(m){if(!ci||!co)$("#bIn").focus();return}
+ $("#bErr").textContent="";$("#bMore").hidden=false;this.hidden=true;$("#bN").focus()};
+// Enter in the date fields runs the availability check instead of submitting an incomplete form
+$("#book").addEventListener("submit",function(e){if($("#bMore").hidden){e.preventDefault();e.stopImmediatePropagation();$("#bCheck").click()}});
+U.wire($("#book"),"Booking request","Request sent","Your host will confirm availability by email and send a secure payment link.",function(){
+ var m=problem();if(m)return m;var n=U.nights(ci,co);
+ return {Stay:p.n+" ("+p.a+")","Check-in":ci,"Check-out":co,Nights:String(n),Guests:$("#bG").value,"Estimated total":usd(p.p*n+p.cl)+" ("+usd(p.p)+" x "+n+" + "+usd(p.cl)+" cleaning)"}});
+// show "Check availability" again whenever the dates change
+var watch=function(){if($("#bMore")&&$("#bMore").hidden&&$("#bCheck"))$("#bCheck").hidden=false};
+["#bIn","#bOut"].forEach(function(s){$(s).addEventListener("change",watch)});$("#cal").addEventListener("click",watch);$("#calClear").addEventListener("click",watch);
+// dates carried over from the search on the home page
+var qi=q.get("in"),qo=q.get("out");
+if(qi&&qo&&qi<qo&&U.parse(qi)>=T&&!U.clash(p,qi,qo,BK)){ci=qi;co=qo;jump(ci)}
+render();
+document.body.classList.add("has-mbar");
+
+/* ---- more stays: same collection first ---- */
+var others=HS.P.filter(function(x){return x.id!=p.id}).sort(function(a,b){return (b.col==p.col)-(a.col==p.col)}).slice(0,3);
+$("#more").innerHTML=others.map(function(x){return U.card(x,{})}).join("");
+})();
+</script>
+</body>
+</html>

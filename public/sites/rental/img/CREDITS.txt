@@ -34,3 +34,4 @@ bed-wood           photo-1765547090903-348b711f0eee
 bed-hotel          photo-1618773928121-c32242e63f39
 living-ocean       photo-1711145131270-af8729518404
 loft-living        photo-1766430956209-72d1c28a16ec
+host-maya          photo-1759873821511-05c06ce184d0

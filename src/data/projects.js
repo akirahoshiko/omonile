@@ -78,18 +78,18 @@ export const projects = [
     type: 'Website template',
     role: 'Web designer & developer',
     tools: ['HTML', 'CSS', 'JavaScript', 'Responsive design'],
-    tagline: 'A vacation-rental website with real photos, nightly prices, live search and a booking estimate.',
+    tagline: 'A vacation-rental website with property pages, an availability calendar, nightly prices and booking requests.',
     description:
-      'A complete staycation and vacation rental website: a search bar, six sortable and filterable stays with nightly prices, a photo-gallery pop-up with a live price estimate and enquiry form, and an FAQ.',
+      'A complete staycation and vacation rental website: a search bar that checks availability, six sortable and filterable stays, a page for every property with a photo viewer, availability calendar, area map, house rules and reviews, a booking panel with a live price total, a "Meet your host" section and an FAQ.',
     problem:
       'Rental owners lose bookings when guests cannot quickly see the place, the price per night and what the stay will cost in total.',
     process:
-      'The page is built around three guest questions: what does it look like, what does it cost per night, and what will my stay total? Listings lead with large photos and a bold nightly price. The pop-up adds a gallery and an estimate (nights x nightly rate + cleaning fee) that updates as the dates change. It is plain HTML, CSS and JavaScript, so it loads fast and is easy to hand over.',
+      'The page is built around three guest questions: what does it look like, what does it cost per night, and what will my stay total? Listings lead with large photos and a bold nightly price. Each property page has a clickable availability calendar that blocks booked nights and enforces the minimum stay, and a booking panel whose total (nights x nightly rate + cleaning fee) updates as the dates change. All content lives in one data file, and it is plain HTML, CSS and JavaScript, so it loads fast and is easy to hand over.',
     solution:
-      'A single-page site with live search, type filters, sorting by price or rating, a gallery pop-up with a price estimate, and a validated enquiry form, all responsive from phone to desktop.',
+      'A home page with date-aware search, filters and sorting, plus a page for every property: photo viewer, amenities, sleeping arrangements, availability calendar, area map, house rules, reviews and host details. Booking requests and enquiries are validated and delivered by email. Responsive from phone to desktop, with a sticky booking bar on mobile.',
     outcome:
-      'A ready-to-customise rental website. It uses sample content and its forms are demo-only, so it can be connected to a real client’s booking enquiries.',
-    workflow: ['Search', 'Filter and sort', 'Browse photos', 'See price per night', 'Estimate the total', 'Send an enquiry'],
+      'A ready-to-customise rental website with working enquiry and booking-request forms. It uses sample content, so a real business only needs to swap in its own homes, photos, prices and booked dates.',
+    workflow: ['Search by dates', 'Filter and sort', 'Open a property', 'Pick dates on the calendar', 'See the total', 'Send a booking request'],
     image: 'work/rental-site.jpg',
     liveUrl: 'sites/rental/',
     gallery: [],
