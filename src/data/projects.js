@@ -94,6 +94,30 @@ export const projects = [
     liveUrl: 'sites/rental/',
     gallery: [],
   },
+  {
+    slug: 'helping-hands-foundation',
+    number: '05',
+    title: 'Helping Hands Foundation: NGO Website',
+    category: 'Web Development',
+    type: 'Full-stack website (demo)',
+    role: 'Web designer & developer',
+    tools: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Paystack', 'Cloudflare Workers'],
+    tagline: 'A charity website with a USD donation flow, impact pages, transparency reports and working volunteer forms.',
+    description:
+      'A complete NGO website for a fictional foundation supporting orphans, vulnerable children and families who need help with medical costs: donation journey, three cause pages with campaign progress, a gift-impact calculator, annual report, safeguarding and privacy policies, news, and volunteer and partnership forms.',
+    problem:
+      'Charities need to earn trust before anyone gives. Donors want to see where money goes, give in a few clicks, and know their payment is safe, while the charity must protect the privacy and dignity of the people it supports.',
+    process:
+      'Before designing, I reviewed 23 NGO websites (charity: water, GiveDirectly, UNICEF, WaterAid, Plan International, World Vision, Slum2School and more) and combined their most effective patterns: a donation box in the hero, an impact-number band, campaign progress bars, a "what your gift can do" slider and a transparency chart. Policies draw on real donor-privacy policies, the Nigeria Data Protection Act and NGO safeguarding guidance.',
+    solution:
+      'A Next.js site deployed on Cloudflare Workers. Donations in US dollars go through a server-side Paystack integration: the secret key never reaches the browser, payments are verified with Paystack before any "thank you", and webhooks are signature-checked and processed once. Without credentials it runs in a clearly labelled demo mode. Contact, volunteer and newsletter forms are validated in the browser and on the server, protected against spam, and confirm success only when the message is actually delivered.',
+    outcome:
+      'A launch-ready template for a real charity: replace the sample team, figures and reports in one config file, add Paystack keys, and it takes real donations. Tested across 18 page types on phone, tablet and desktop.',
+    workflow: ['Choose an amount', 'Pick a cause', 'Review the gift', 'Secure checkout', 'Server verifies payment', 'Thank-you page'],
+    image: 'work/helping-hands.jpg',
+    liveUrl: 'https://helping-hands-foundation.peaceomachunyiejiga.workers.dev',
+    gallery: [],
+  },
 ];
 
 export const getProject = (slug) => projects.find((p) => p.slug === slug);

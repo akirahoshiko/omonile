@@ -41,7 +41,7 @@ export default function ProjectDetail() {
           <p className="text-mute mt-6 max-w-[60ch] text-[19px] md:text-[20px] leading-relaxed">{p.description}</p>
           {p.liveUrl && (
             <div className="mt-8 flex flex-wrap items-center gap-4">
-              <a href={assetUrl(p.liveUrl)} target="_blank" rel="noreferrer" className="btn-primary">
+              <a href={/^https?:\/\//.test(p.liveUrl) ? p.liveUrl : assetUrl(p.liveUrl)} target="_blank" rel="noreferrer" className="btn-primary">
                 Visit the live site <ArrowUpRight width={16} height={16} className="arrow" />
               </a>
               <span className="text-mute text-[15px]">Opens in a new tab · template with sample content</span>
