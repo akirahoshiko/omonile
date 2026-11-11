@@ -1,0 +1,26 @@
+Photos from Unsplash (https://unsplash.com), used under the Unsplash License (free to use, no permission needed).
+Photographer names were read from Unsplash search pages and may need a final check against each photo page.
+
+house-water        Grant Durr
+house-pool-a       The Anam
+house-pool-b       Dinuka Lankaloka
+house-pool-green   Sanju Pandita
+house-golden       Roberto Nickson
+villa-twilight     kadek wahyudi
+infinity-bay       Ben Koorengevel
+beach-palms        Zoshua Colah
+balcony-town       Gabor Szuts
+balcony-kuvaev     David Kuvaev
+balcony-table      imren tutuncu
+balcony-ocean      Diana Rafira
+bath-ocean         Diana Rafira
+deck-ocean         Villa Rental
+patio-forest       Clay Banks
+green-hills        Caroline Badran
+cabin-lake         Akshat Sharma
+house-trees        Gunnar Ridderstrom
+bed-blue           mark champs
+bed-modern         Puscas Adryan
+bed-spacejoy       Spacejoy
+couch-plant        Andrea Davis
+living-room        Freddy G
