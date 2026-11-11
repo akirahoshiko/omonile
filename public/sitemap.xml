@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://peace-ejiga-portfolio.pages.dev/</loc></url>
-  <url><loc>https://peace-ejiga-portfolio.pages.dev/work/telegram-booking-assistant</loc></url>
-  <url><loc>https://peace-ejiga-portfolio.pages.dev/work/telegram-meal-tracker</loc></url>
-  <url><loc>https://peace-ejiga-portfolio.pages.dev/work/order-reminder-automation</loc></url>
-  <url><loc>https://peace-ejiga-portfolio.pages.dev/work/haven-stays-rental-website</loc></url>
-  <url><loc>https://peace-ejiga-portfolio.pages.dev/sites/rental/</loc></url>
+  <url><loc>https://peace-ejiga.vercel.app/</loc></url>
+  <url><loc>https://peace-ejiga.vercel.app/work/telegram-booking-assistant</loc></url>
+  <url><loc>https://peace-ejiga.vercel.app/work/telegram-meal-tracker</loc></url>
+  <url><loc>https://peace-ejiga.vercel.app/work/order-reminder-automation</loc></url>
+  <url><loc>https://peace-ejiga.vercel.app/work/haven-stays-rental-website</loc></url>
+  <url><loc>https://peace-ejiga.vercel.app/sites/rental/</loc></url>
 </urlset>

@@ -1,5 +1,7 @@
 # Peace Ejiga · Portfolio
 
+**Live site: [peace-ejiga.vercel.app](https://peace-ejiga.vercel.app)**
+
 My portfolio website. I design websites and build workflow automations that take repetitive work off small teams: enquiries, bookings, reminders and follow-ups.
 
 ![Portfolio homepage](docs/preview.jpg)

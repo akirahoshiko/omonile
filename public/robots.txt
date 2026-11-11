@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://peace-ejiga-portfolio.pages.dev/sitemap.xml
+Sitemap: https://peace-ejiga.vercel.app/sitemap.xml
