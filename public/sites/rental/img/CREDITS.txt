@@ -7,6 +7,7 @@ house-pool-b       Dinuka Lankaloka
 house-pool-green   Sanju Pandita
 house-golden       Roberto Nickson
 villa-twilight     kadek wahyudi
+infinity-bay       Ben Koorengevel
 balcony-town       Gabor Szuts
 balcony-kuvaev     David Kuvaev
 balcony-table      imren tutuncu
@@ -23,7 +24,6 @@ couch-plant        Andrea Davis
 living-room        Freddy G
 
 Added 2026-11-11 (Unsplash photo IDs; photographer names still to be confirmed on each photo page):
-coast-garden       photo-1758907749704-7ad4e48b2aa0
 terrace-roses      photo-1716667282987-c03452d43181
 villa-pool-white   photo-1613977257365-aaae5a9817ff
 infinity-pool      photo-1675657144361-98ae33e6b6f9
