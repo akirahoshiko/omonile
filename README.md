@@ -26,7 +26,7 @@ The Haven Stays template lives in [`public/sites/rental`](public/sites/rental) a
 
 ## Tech
 
-React, Vite, Tailwind CSS, React Router. Hosted on Cloudflare Pages.
+React, Vite, Tailwind CSS, React Router. Hosted on Vercel.
 
 ## Run it locally
 
