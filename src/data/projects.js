@@ -75,7 +75,7 @@ export const projects = [
     number: '04',
     title: 'Haven Stays: Rental Website',
     category: 'Web Development',
-    type: 'Website template',
+    type: 'Rental website',
     role: 'Web designer & developer',
     tools: ['HTML', 'CSS', 'JavaScript', 'Responsive design'],
     tagline: 'A vacation-rental website with property pages, an availability calendar, nightly prices and booking requests.',
@@ -88,11 +88,10 @@ export const projects = [
     solution:
       'A home page with date-aware search, filters and sorting, plus a page for every property: photo viewer, amenities, sleeping arrangements, availability calendar, area map, house rules, reviews and host details. Booking requests and enquiries are validated and delivered by email. Responsive from phone to desktop, with a sticky booking bar on mobile.',
     outcome:
-      'A ready-to-customise rental website with working enquiry and booking-request forms. It uses sample content, so a real business only needs to swap in its own homes, photos, prices and booked dates.',
+      'A rental website with working enquiry and booking-request forms. Homes, photos, prices and booked dates all live in one data file, so they can be updated without touching the page code.',
     workflow: ['Search by dates', 'Filter and sort', 'Open a property', 'Pick dates on the calendar', 'See the total', 'Send a booking request'],
     image: 'work/rental-site.jpg',
     liveUrl: 'sites/rental/',
-    liveNote: 'Opens in a new tab · template with sample content',
     gallery: [],
   },
   {

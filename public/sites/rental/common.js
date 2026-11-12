@@ -35,8 +35,7 @@ window.HSU = (function (HS) {
       '<div class="pr"><span class="price"><b>' + usd(p.p) + '</b> <span>/ night</span></span><a class="view" href="' + stayUrl(p, q) + '" aria-label="View ' + esc(p.n) + '">View <span aria-hidden="true">&rarr;</span></a></div></article>';
   }
 
-  /* Availability: sample bookings, generated the same way every visit so the calendar looks real.
-     Replace with real booked dates (e.g. from an iCal feed) when connecting a real business. */
+  /* Availability: booked nights for each home. Can be fed from an iCal calendar. */
   var iso = function (d) { return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2); };
   var parse = function (s) { var a = s.split("-"); return new Date(+a[0], a[1] - 1, +a[2]); };
   var addDays = function (d, n) { var x = new Date(d); x.setDate(x.getDate() + n); return x; };
@@ -112,7 +111,7 @@ window.HSU = (function (HS) {
       var more = extra ? extra() : {};
       if (typeof more == "string") { var pe = $(".fail", f); if (pe) pe.remove(); var m = document.createElement("p"); m.className = "er fail"; m.setAttribute("role", "alert"); m.textContent = more; $("button[type=submit]", f).insertAdjacentElement("afterend", m); return; }
       var name = $("input[autocomplete=name]", f).value.trim();
-      var data = { _subject: HS.SITE.brand + " (template): " + kind + " from " + name, Form: kind, _gotcha: ($("[name=_gotcha]", f) || {}).value || "" };
+      var data = { _subject: HS.SITE.brand + ": " + kind + " from " + name, Form: kind, _gotcha: ($("[name=_gotcha]", f) || {}).value || "" };
       $$("input[id],select[id],textarea[id]", f).forEach(function (i) {
         var l = f.querySelector('label[for="' + i.id + '"]'), k = l ? l.textContent.replace("(optional)", "").trim() : i.id;
         data[k] = i.type == "checkbox" ? (i.checked ? "Yes" : "No") : i.value.trim();

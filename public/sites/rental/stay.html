@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Stay details | Haven Stays</title>
-<meta name="description" content="Photos, amenities, live availability and nightly prices for a Haven Stays home. Sample template website.">
+<meta name="description" content="Photos, amenities, live availability and nightly prices for a Haven Stays home.">
 <meta name="theme-color" content="#3A2418">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -113,7 +113,6 @@
       <button class="btn btn-cta" type="submit">Send booking request</button>
      </div>
      <p class="note">You won't be charged yet. Your host confirms availability, then sends a secure payment link.</p>
-     <p class="note" style="margin-top:-8px">Template site: requests are delivered to the designer.</p>
     </form>
    </aside>
   </div>
@@ -143,7 +142,7 @@
    <div><h4>Help</h4><ul><li><a href="index.html#faq">FAQ</a></li><li><a href="index.html#contact">Contact</a></li></ul></div>
    <div><h4>Get in touch</h4><ul><li><a data-c="phone" data-tel href="#"></a></li><li><a data-c="email" data-mail href="#"></a></li><li data-c="hours"></li></ul></div>
   </div>
-  <div class="legal"><span>Template website designed &amp; built by Peace Ejiga. Sample content.</span><span>Photos from <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> · Map tiles &copy; <a href="https://www.esri.com" target="_blank" rel="noopener">Esri</a>, <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span><a href="../../">Back to portfolio</a></div>
+  <div class="legal"><span>© 2026 Haven Stays. Website by Peace Ejiga.</span><span>Photos from <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> · Map tiles &copy; <a href="https://www.esri.com" target="_blank" rel="noopener">Esri</a>, <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span><a href="../../">Back to portfolio</a></div>
  </div>
 </footer>
 
@@ -162,7 +161,7 @@ if(!p){
 
 /* ---- page text ---- */
 document.title=p.n+" · "+p.a+" | from "+usd(p.p)+" / night | "+HS.SITE.brand;
-$('meta[name=description]').setAttribute("content",p.n+" in "+p.a+": "+p.d+" From "+usd(p.p)+" / night. Sample template website.");
+$('meta[name=description]').setAttribute("content",p.n+" in "+p.a+": "+p.d+" From "+usd(p.p)+" / night.");
 $("#crumbs").innerHTML='<li><a href="index.html#stays">Stays</a></li><li>'+esc(p.c)+'</li><li aria-current="page">'+esc(p.n)+'</li>';
 $("#sTitle").textContent=p.n;
 $("#sMeta").innerHTML='<span class="rt"><i aria-hidden="true">★</i> '+p.r+' <span style="color:var(--mut);font-weight:400">('+p.rv.length+' reviews)</span></span><span>'+U.ic.pin+esc(p.a)+'</span><span>'+HS.TL[p.t]+'</span>';
@@ -178,7 +177,7 @@ function loadMap(){if(mapEl._done)return;mapEl._done=1;
  var css=document.createElement("link");css.rel="stylesheet";css.href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css";document.head.appendChild(css);
  var js=document.createElement("script");js.src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js";
  js.onload=function(){var m=L.map(mapEl,{scrollWheelZoom:false,attributionControl:true}).setView(p.geo,13);
-  // Esri World Street Map (no key needed for a demo). For a live business, use a keyed provider (e.g. Esri, MapTiler or Stadia).
+  // Esri World Street Map tiles (no API key needed).
   L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",{maxZoom:18,attribution:'Tiles &copy; <a href="https://www.esri.com">Esri</a> &mdash; Esri, HERE, Garmin, &copy; OpenStreetMap contributors'}).addTo(m);
   L.circle(p.geo,{radius:1200,color:"#5A311F",weight:2,fillColor:"#5A311F",fillOpacity:.15}).addTo(m)};
  js.onerror=function(){mapEl.innerHTML='<p style="padding:24px;color:var(--mut)">The map could not load. The home is in '+esc(p.a)+'.</p>'};
