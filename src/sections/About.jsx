@@ -22,7 +22,7 @@ export default function About() {
         </Reveal>
 
         <Reveal className="lg:col-span-8" delay={100}>
-          <h2 id="about-title" className="font-medium tracking-display text-[30px] md:text-[42px] leading-[1.15]">
+          <h2 id="about-title" className="font-normal tracking-display text-[26px] md:text-[34px] leading-[1.2]">
             I help businesses win more customers and lose the repetitive work.{' '}
             <span className="text-mute">Clear websites in front, quiet automations behind.</span>
           </h2>

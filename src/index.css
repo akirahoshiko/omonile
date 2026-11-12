@@ -60,7 +60,7 @@ body {
   }
 
   .h-section {
-    @apply font-medium tracking-display text-[40px] leading-[1.05] md:text-[60px];
+    @apply font-normal tracking-display text-[32px] leading-[1.1] md:text-[44px];
   }
 
   .link-underline {

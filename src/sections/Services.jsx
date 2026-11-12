@@ -19,7 +19,7 @@ export default function Services() {
           {services.map((s, i) => (
             <Reveal as="li" key={s.no} delay={i * 80} className="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-6 py-8 md:py-10 border-b border-line">
               <span className="md:col-span-1 font-mono text-[13px] text-mute pt-2">{s.no}</span>
-              <h3 className="md:col-span-4 text-[28px] md:text-[34px] font-medium tracking-display leading-tight">{s.title}</h3>
+              <h3 className="md:col-span-4 text-[24px] md:text-[28px] font-normal tracking-display leading-tight">{s.title}</h3>
               <div className="md:col-span-6 md:col-start-7">
                 <p className="text-[18px] leading-relaxed">{s.text}</p>
                 <p className="mt-4 font-mono text-[13px] text-mute">{s.tags.join('  ·  ')}</p>
@@ -33,7 +33,7 @@ export default function Services() {
           <Reveal className="flex items-end justify-between gap-6">
             <div>
               <p className="label">Process</p>
-              <h3 className="mt-4 text-[30px] md:text-[40px] font-medium tracking-display leading-tight">How a project runs</h3>
+              <h3 className="mt-4 text-[26px] md:text-[32px] font-normal tracking-display leading-tight">How a project runs</h3>
             </div>
           </Reveal>
           <ol className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-line border border-line rounded-[20px] overflow-hidden">

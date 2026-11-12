@@ -37,7 +37,7 @@ export default function ProjectDetail() {
         <Reveal>
           <Link to={{ pathname: '/', hash: '#work' }} className="text-[15px] text-mute hover:text-ink transition-colors">← All work</Link>
           <p className="label mt-10">{p.number} · {p.category}</p>
-          <h1 className="mt-4 font-medium tracking-display text-[44px] md:text-[76px] leading-[1.02] max-w-[16ch]">{p.title}</h1>
+          <h1 className="mt-4 font-normal tracking-display text-[38px] md:text-[56px] leading-[1.05] max-w-[18ch]">{p.title}</h1>
           <p className="text-mute mt-6 max-w-[60ch] text-[19px] md:text-[20px] leading-relaxed">{p.description}</p>
           {p.liveUrl && (
             <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -66,7 +66,7 @@ export default function ProjectDetail() {
           {story.map(([h, t], i) => (
             <Reveal key={h} className="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-8 py-8 md:py-10 border-b border-line">
               <span className="md:col-span-1 font-mono text-[13px] text-mute pt-1.5">0{i + 1}</span>
-              <h2 className="md:col-span-3 text-[24px] md:text-[28px] font-medium tracking-tight leading-tight">{h}</h2>
+              <h2 className="md:col-span-3 text-[20px] md:text-[22px] font-medium tracking-tight leading-tight">{h}</h2>
               <p className="md:col-span-7 md:col-start-6 text-[18px] md:text-[19px] leading-relaxed">{t}</p>
             </Reveal>
           ))}
@@ -100,7 +100,7 @@ export default function ProjectDetail() {
         <Reveal className="mt-20 md:mt-28 border-t border-line pt-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
           <Link to={`/work/${next.slug}`} className="group block">
             <p className="label">Next project</p>
-            <p className="mt-3 text-[32px] md:text-[52px] font-medium tracking-display leading-[1.05] flex items-center gap-4 group-hover:text-moss transition-colors">
+            <p className="mt-3 text-[28px] md:text-[40px] font-normal tracking-display leading-[1.08] flex items-center gap-4 group-hover:text-moss transition-colors">
               {next.title}
               <ArrowRight width={36} height={36} className="shrink-0 transition-transform group-hover:translate-x-2" />
             </p>

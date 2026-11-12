@@ -17,7 +17,7 @@ export default function Hero() {
               {profile.availability}
             </p>
 
-            <h1 id="hero-title" className="mt-6 font-medium tracking-display text-[44px] leading-[1.02] sm:text-[60px] lg:text-[76px]">
+            <h1 id="hero-title" className="mt-6 font-normal tracking-display text-[40px] leading-[1.04] sm:text-[52px] lg:text-[62px]">
               I design websites and automate the work behind them.
             </h1>
             <p className="mt-7 max-w-[52ch] text-[19px] leading-relaxed text-mute">

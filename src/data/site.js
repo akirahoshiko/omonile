@@ -42,8 +42,8 @@ export const services = [
   {
     no: '02',
     title: 'Web Development',
-    text: 'Fast, responsive websites built and deployed, from business sites and landing pages to WordPress builds clients can update themselves.',
-    tags: ['WordPress', 'Elementor', 'Deployment'],
+    text: 'Fast, responsive websites built and deployed: online stores with checkout and an order admin, charity sites with donations, and business sites clients can update themselves.',
+    tags: ['Next.js', 'React', 'Tailwind CSS', 'Cloudflare', 'WordPress'],
   },
   {
     no: '03',
@@ -55,7 +55,8 @@ export const services = [
 
 export const toolkit = [
   { group: 'Automation & AI', items: ['n8n', 'Telegram', 'Google Sheets', 'Google Calendar', 'Gmail', 'OpenAI', 'Google Gemini'] },
-  { group: 'Design & Web', items: ['WordPress', 'Elementor', 'Figma', 'Canva'] },
+  { group: 'Web development', items: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Cloudflare Workers & D1', 'Vercel', 'WordPress', 'Elementor'] },
+  { group: 'Design', items: ['Figma', 'Canva', 'Responsive layouts'] },
 ];
 
 // Work history, newest first (from the CV). `year` is the label on each stacked card.

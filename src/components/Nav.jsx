@@ -99,7 +99,7 @@ export default function Nav() {
                 key={n.id}
                 to={to(n.id)}
                 onClick={close}
-                className="flex items-baseline gap-4 px-4 py-3.5 rounded-2xl text-[26px] font-medium tracking-display hover:bg-ink/[0.04]"
+                className="flex items-baseline gap-4 px-4 py-3.5 rounded-2xl text-[24px] font-normal tracking-display hover:bg-ink/[0.04]"
               >
                 <span className="font-mono text-[12px] text-mute">0{i + 1}</span>
                 {n.label}

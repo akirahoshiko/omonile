@@ -19,7 +19,7 @@ export default {
         mono: ['"Geist Mono"', 'ui-monospace', 'monospace'],
       },
       maxWidth: { site: '1240px' },
-      letterSpacing: { display: '-0.035em' },
+      letterSpacing: { display: '-0.028em' },
     },
   },
   plugins: [],
