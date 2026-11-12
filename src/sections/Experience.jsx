@@ -12,7 +12,7 @@ export default function Experience() {
           <p className="label">Experience</p>
           <h2 id="exp-title" className="h-section mt-4">Where I&apos;ve worked</h2>
           <p className="text-mute mt-5 leading-relaxed max-w-[36ch]">
-            IT support, administration and customer relations: the work that showed me where automation saves real time.
+            Building websites and automations today, backed by four years in IT support, administration and customer relations, where I saw first-hand where teams lose time.
           </p>
         </Reveal>
 

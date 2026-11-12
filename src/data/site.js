@@ -59,16 +59,36 @@ export const toolkit = [
   { group: 'Design', items: ['Figma', 'Canva', 'Responsive layouts'] },
 ];
 
-// Work history, newest first (from the CV). `year` is the label on each stacked card.
+// Work history, newest first. The first two are current; the rest come from the CV.
 export const experience = [
+  {
+    year: '2025',
+    period: '2025 – Present',
+    title: 'Web Developer & Automation Specialist',
+    org: 'Independent',
+    points: [
+      'Designed and built Finest Fossil, a live sneaker store with colour-by-colour product pages, checkout, order tracking and a private order admin (Next.js, Cloudflare Workers and D1).',
+      'Built Helping Hands Foundation, a full charity website with a USD donation flow, campaign pages, an annual report and working volunteer and contact forms.',
+      'Built n8n workflows that answer customers on Telegram, book appointments, log meals with AI, and send order reminders from Google Sheets and Gmail.',
+    ],
+  },
+  {
+    period: 'Since university',
+    title: 'Founder',
+    org: 'Finest Fossil, sneaker business',
+    points: [
+      'Run a sneaker business that delivers across Nigeria: listings, pricing, customer enquiries, payment confirmation and delivery.',
+      'Designed the brand and moved ordering from WhatsApp chats to an online store with order numbers and status tracking.',
+    ],
+  },
   {
     year: '2025',
     period: 'Sep 2025 – Feb 2026',
     title: 'Customer Relations / Sales Representative',
     org: 'JIU JIU Rental Network',
     points: [
-      'Interpreted customer enquiries about products, payment plans and service options, then gave clear answers and follow-up support.',
-      'Maintained accurate customer records and sales documentation for the team.',
+      'Answered customer enquiries on products, payment plans and service options, and followed each one through to a clear outcome.',
+      'Kept customer records and sales documentation accurate and up to date for the team.',
     ],
   },
   {
@@ -77,8 +97,8 @@ export const experience = [
     title: 'Administrative Assistant / Secretary',
     org: 'Power Permutations LTD',
     points: [
-      'Processed invoices, purchase orders and financial requisitions, and maintained installation, equipment and maintenance records.',
-      'Coordinated communication between clients, suppliers and engineers to keep project information current.',
+      'Processed invoices, purchase orders and requisitions, and kept installation, equipment and maintenance records in order.',
+      'Coordinated clients, suppliers and engineers so everyone worked from the same, current project information.',
     ],
   },
   {
@@ -87,8 +107,8 @@ export const experience = [
     title: 'IT & Administrative Support',
     org: 'Ministry of Interior',
     points: [
-      'Troubleshot staff system issues, performed routine maintenance and trained staff across departments on digital tools.',
-      'Supported day-to-day operations and maintained documentation used across departments.',
+      'Resolved staff system issues, carried out routine maintenance and trained staff across departments on digital tools.',
+      'Supported daily operations and maintained documentation used across departments.',
     ],
   },
   {
@@ -97,14 +117,14 @@ export const experience = [
     title: 'Executive Assistant',
     org: 'Faith Heroic Generation',
     points: [
-      'Drafted letters, confidential correspondence, and financial and administrative reports for leadership review.',
-      'Managed executive calendars, screened inbox communications, and maintained filing systems and project records.',
+      'Drafted letters, confidential correspondence and financial and administrative reports for leadership.',
+      'Managed executive calendars and inboxes, and kept filing systems and project records organised.',
     ],
   },
 ];
 
 export const education = [
-  { title: 'M.Tech, Cyber Security', org: 'Federal University of Technology', note: 'In progress' },
-  { title: 'B.Tech, Computer Science (Information Technology)', org: 'Federal University of Technology', note: 'Completed' },
+  { title: 'M.Tech, Cyber Security', org: 'Postgraduate', note: 'In progress' },
+  { title: 'B.Tech, Computer Science (Information Technology)', org: 'Undergraduate', note: 'Completed' },
   { title: 'Cybersecurity Governance, Risk & Compliance (GRC)', org: 'Professional training', note: 'In progress' },
 ];
