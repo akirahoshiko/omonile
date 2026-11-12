@@ -44,7 +44,7 @@ export default function ProjectDetail() {
               <a href={/^https?:\/\//.test(p.liveUrl) ? p.liveUrl : assetUrl(p.liveUrl)} target="_blank" rel="noreferrer" className="btn-primary">
                 Visit the live site <ArrowUpRight width={16} height={16} className="arrow" />
               </a>
-              <span className="text-mute text-[15px]">Opens in a new tab · template with sample content</span>
+              <span className="text-mute text-[15px]">{p.liveNote || "Opens in a new tab"}</span>
             </div>
           )}
         </Reveal>

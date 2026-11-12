@@ -92,6 +92,7 @@ export const projects = [
     workflow: ['Search by dates', 'Filter and sort', 'Open a property', 'Pick dates on the calendar', 'See the total', 'Send a booking request'],
     image: 'work/rental-site.jpg',
     liveUrl: 'sites/rental/',
+    liveNote: 'Opens in a new tab · template with sample content',
     gallery: [],
   },
   {
@@ -117,6 +118,31 @@ export const projects = [
     image: 'work/helping-hands.jpg',
     liveUrl: 'https://helping-hands-foundation.peaceomachunyiejiga.workers.dev',
     gallery: [],
+  },
+  {
+    slug: 'finest-fossil-sneaker-store',
+    number: '06',
+    title: 'Finest Fossil: Sneaker Store',
+    category: 'Web Development',
+    type: 'E-commerce website',
+    role: 'Designer, developer & brand',
+    tools: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Cloudflare Workers', 'Cloudflare D1'],
+    tagline: 'An online store for my own sneaker business, with colour-by-colour product pages, checkout and an order admin.',
+    description:
+      'A live e-commerce site for Finest Fossil, the sneaker business I have run since my undergraduate days. Customers pick a colourway and size, check out with delivery to any Nigerian state or abroad, and follow their order on its own page. Orders land in a private admin where I confirm payment, quote international shipping and update the status.',
+    problem:
+      'Selling on WhatsApp meant answering “how much is this?” for every photo and copying sizes, addresses and totals by hand. Customers could not see what was in stock, and orders were easy to lose in long chats.',
+    process:
+      'I studied six sneaker-store layouts on Pinterest and measured the real type on Nike, On, Foot Locker, END. and Sneakersnstuff to set the font sizes and weights. I designed the logo, a sneaker sole print that ties the word “fossil” to footwear, and built the catalogue so each model has one page with a swatch per colourway that swaps the photo.',
+    solution:
+      'A Next.js store on Cloudflare Workers with a D1 database. Checkout prices every item on the server from the catalogue, adds the delivery fee for the customer’s state (Lagos, South-West or the rest of Nigeria) and saves the order. The customer gets an order number and a “Pay on WhatsApp” button with the total filled in. A password-protected admin lists orders with filters and search, and lets me set status, payment and shipping quotes. Pages are prerendered and served from Cloudflare’s edge, and photos are WebP in two sizes so phones download the small ones.',
+    outcome:
+      'The business now has one link that shows every pair, colour and price, and takes orders around the clock. A product opens in about a tenth of a second once the site is loaded, and the whole order journey was tested on phone, tablet and desktop.',
+    workflow: ['Pick a colourway', 'Choose a size', 'Check out', 'Delivery fee by state', 'Order page', 'Pay on WhatsApp', 'Admin confirms and ships'],
+    image: 'work/finest-fossil.jpg',
+    liveUrl: 'https://finest-fossil.peaceomachunyiejiga.workers.dev',
+    liveNote: 'Opens in a new tab · live store taking real orders',
+    gallery: ['work/finest-fossil-product.jpg', 'work/finest-fossil-checkout.jpg'],
   },
 ];
 
