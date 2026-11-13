@@ -50,7 +50,7 @@ export const projects = [
     workflow: ['Choose an amount', 'Pick a cause', 'Review the gift', 'Secure checkout', 'Server verifies payment', 'Thank-you page'],
     image: 'work/helping-hands.jpg',
     liveUrl: 'https://helping-hands-foundation.peaceomachunyiejiga.workers.dev',
-    gallery: [],
+    gallery: ['work/helping-hands-causes.jpg', 'work/helping-hands-cause.jpg'],
   },
   {
     slug: 'haven-stays-rental-website',
